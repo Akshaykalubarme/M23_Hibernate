@@ -3,17 +3,14 @@ package com.cg.client;
 
 import com.cg.entites.Certificate;
 import com.cg.entites.College;
-import com.cg.entites.Placement;
 import com.cg.entites.Student;
 import com.cg.entites.User;
 import com.cg.service.CertificateServiceImp;
 import com.cg.service.CollegeServiceImp;
 import com.cg.service.ICertificateService;
 import com.cg.service.ICollegeService;
-import com.cg.service.IPlacementService;
 import com.cg.service.IStudentService;
 import com.cg.service.IUserService;
-import com.cg.service.PlacementServiceImp;
 import com.cg.service.StudentServiceImp;
 import com.cg.service.UserServiceImp;
 
