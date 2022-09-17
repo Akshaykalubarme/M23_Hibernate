@@ -12,8 +12,8 @@ public class Client
 		Student s = new Student();
 		
 		//create operation
-		s.setRollno(102);
-		s.setName("Amol kalubarme");
+		s.setRollno(104);
+		s.setName("Amol kalubarme 104");
 		service.addStudent(s); 
 		
 		/*//retrieve
