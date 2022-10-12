@@ -11,25 +11,28 @@ public class Client
 		StudentService service = new StudentServiceImpl();
 		Student s = new Student();
 		
-		//create operation
-		s.setRollno(104);
-		s.setName("Amol kalubarme 104");
-		service.addStudent(s); 
+//		//create operation
+//		s.setRollno(103);
+//		s.setName("Sagar");
+//		service.addStudent(s); 
+//		System.out.println("Data is added");
 		
-		/*//retrieve
-		s=service.getStudentById(110);
+		//retrieve
+		s=service.getStudentById(101);
 		System.out.println("Student Roll No: "+s.getRollno());
-		System.out.println("Student Roll No: "+s.getName()); */
+		System.out.println("Student Roll No: "+s.getName()); 
 		
-		/*//update
-		s=service.getStudentById(110);
-		s.setName("Amol kalubarme");
-		service.updateStudent(s);*/
-		
-		/*//delete
-		s=service.getStudentById(110);
-		service.deleteStudent(s);
-		System.out.println("Data is deleted");*/
+//		//update
+//		s=service.getStudentById(102);
+//		s.setRollno(102);
+//		s.setName("Amol");
+//		service.updateStudent(s);
+//		System.out.println("Data is updated");
+	
+//		//delete
+//		s=service.getStudentById(103);
+//		service.deleteStudent(s);
+//		System.out.println("Data is deleted");
 		
 	}
 }

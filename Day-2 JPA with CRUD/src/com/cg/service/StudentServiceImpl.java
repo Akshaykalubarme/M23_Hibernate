@@ -7,11 +7,18 @@ import com.cg.entities.Student;
 public class StudentServiceImpl implements StudentService{
 
 	private StudentDao dao;
-	public StudentServiceImpl(){
+	public StudentServiceImpl()
+	{
 		super();
-	dao = new StudentDaoImpl();
+		dao = new StudentDaoImpl();
 	}
-		
+	
+	@Override
+	public Student getStudentById(int rollno) {
+		Student s=dao.getStudentById(rollno);
+		return s;
+	}
+	
 	@Override
 	public void addStudent(Student s) {
 		dao.beginTransaction();
@@ -34,12 +41,5 @@ public class StudentServiceImpl implements StudentService{
 		dao.deleteStudent(s);
 		dao.commitTransaction();
 	}
-
-	@Override
-	public Student getStudentById(int rollno) {
-		Student s=dao.getStudentById(rollno);
-		return s;
-	}
-	
 	
 }

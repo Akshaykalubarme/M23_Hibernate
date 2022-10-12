@@ -7,9 +7,12 @@ import com.cg.entities.Student;
 public class StudentDaoImpl implements StudentDao 
 {
 	private EntityManager em;
-	public StudentDaoImpl() {
-	em = JPAUtil.getEntityManager();
+	
+	public StudentDaoImpl() 
+	{
+		em = JPAUtil.getEntityManager();
 	}
+	
 	@Override
 	public Student getStudentById(int rollno) {
 		Student s = em.find(Student.class, rollno);
@@ -32,15 +35,15 @@ public class StudentDaoImpl implements StudentDao
 	}
 	
 	@Override
-	public void commitTransaction() {
-		em.getTransaction().commit();
-		
-	}
-	@Override
 	public void beginTransaction() {
 		em.getTransaction().begin();
 		
 	}
 	
-	
+	@Override
+	public void commitTransaction() {
+		em.getTransaction().commit();
+		
+	}
+		
 }
